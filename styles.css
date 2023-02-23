@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(252, 252, 252);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-box {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+h1 {
+    font-size: 3em;
+    position: relative;
+    bottom: 150px;
+}
+
+#password {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #004cff;
+    font-weight: 100;
+}
+
+input[type="number"] {
+    background: none;
+    border: 1px solid #004cff;
+    padding: 7px;
+    padding-left: 10px;
+    width: 50px;
+    height: 25px;
+    font-size: 1.2em;
+    box-sizing: content-box;
+}
+
+button[type="submit"] {
+    transition: all 300ms;
+    position: relative;
+    top: 1px;
+    padding: 3px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 1.4em;
+    background-color: #004cff;
+    border: 3px solid #004cff;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2163ff;
+    border-color: #2163ff;
+    padding-left: 10px;
+}
+
+#watermark {
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+    opacity: 0.5;
+}
