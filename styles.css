@@ -17,11 +17,19 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+
 .main-box {
     display: flex;
     text-align: center;
     flex-direction: column;
+    
+}
 
+p {
+    display: none;
+    position: relative;
+    bottom: 80px;
+    font-size: 1.5em;
 }
 
 h1 {
