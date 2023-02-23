@@ -32,6 +32,9 @@ campoQuantidade.addEventListener('change', () => {
 })
 
 gerar.addEventListener('click', () => {
+    const aviso = document.getElementsByTagName('p');
+    aviso[0].style.display = 'block';
+
     const senhaGerada = Array();
 
     for(let c = 0; c < quantidade; c++) {
