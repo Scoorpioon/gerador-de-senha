@@ -68,6 +68,7 @@ gerar.addEventListener('click', () => {
     senha.textContent = senhaString;
 
     aviso[0].style.display = 'block', aviso[1].style.display = 'none';
+    gerar.style.backgroundColor = 'blue', gerar.style.borderColor = 'blue';
     
     senhasAnteriores.unshift(senhaString);
     listaDeSenhas.appendChild(document.createElement('li')).textContent = senhaString;
