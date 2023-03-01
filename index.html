@@ -10,14 +10,18 @@
 <body>
     <h1>Gerador de senha</h1>
     <p>PS: Não esqueça de guardar bem a senha caso a utilize!</p>
+    <p class="warning">Por favor, escolha uma quantidade de 7 até 22 caracteres.</p>
     <div class="main-box">
         <span id="password">Gere uma senha!</span>
         <div class="manipular">
             <input type="number" name="quantidade" id="quantidade" min="7" max="22" value="7" title="Tamanho da senha">
             <button type="submit" id="gerar">Gerar</button>
         </div>
-        <span id="watermark">&copy; Gabriel Alexandre, 2023</span>
     </div>
+    <ul id="senhas-anteriores">
+
+    </ul>
+    <span id="watermark">&copy; Gabriel Alexandre, 2023</span>
 </body>
 <script src="geradorSenha.js"></script>
 </html> 
