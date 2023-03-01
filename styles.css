@@ -32,6 +32,10 @@ p {
     font-size: 1.5em;
 }
 
+.warning {
+    color: red;
+}
+
 h1 {
     font-size: 3em;
     position: relative;
@@ -77,9 +81,36 @@ button[type="submit"]:hover {
     padding-left: 10px;
 }
 
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    margin-top: 50px;
+    list-style-type: none;
+}
+
+li {
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(156, 156, 156);
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
 #watermark {
     position: absolute;
     right: 35px;
     bottom: 20px;
     opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+    body {
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+    }
 }
