@@ -4,6 +4,8 @@ const campoQuantidade = document.getElementById('quantidade');
 const alfabetoMinusculo = 'abcdefghijklmnopqrstuvwxyz';
 const alfabetoMaiusculo = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const numeros = '0123456789';
+const listaDeSenhas = document.getElementById('senhas-anteriores');
+let senhasAnteriores = Array();
 let quantidade = 7;
 
 const gerarCaractere = (tipo) => {
@@ -33,8 +35,6 @@ campoQuantidade.addEventListener('change', () => {
 
 gerar.addEventListener('click', () => {
     const aviso = document.getElementsByTagName('p');
-    aviso[0].style.display = 'block';
-
     const senhaGerada = Array();
 
     for(let c = 0; c < quantidade; c++) {
@@ -64,5 +64,21 @@ gerar.addEventListener('click', () => {
     senhaString = senhaString.split(',').join(''); // Remove as vírgulas da string
     console.log('A senha gerada foi: ' + senhaString);
 
+    if(quantidade >= 7 && quantidade <= 22) {
     senha.textContent = senhaString;
+
+    aviso[0].style.display = 'block', aviso[1].style.display = 'none';
+    
+    senhasAnteriores.unshift(senhaString);
+    listaDeSenhas.appendChild(document.createElement('li')).textContent = senhaString;
+
+    } else {
+        gerar.style.backgroundColor = 'red', gerar.style.borderColor = 'red';
+        aviso[1].style.display = 'block', aviso[0].style.display = 'none';
+
+    }
+
+    if(senhasAnteriores.length > 3) {
+        console.log(listaDeSenhas.children[0].remove())
+    }
 })
