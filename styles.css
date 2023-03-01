@@ -101,7 +101,7 @@ li {
 #watermark {
     position: absolute;
     right: 35px;
-    bottom: 20px;
+    bottom: 10px;
     opacity: 0.5;
 }
 
@@ -112,5 +112,9 @@ li {
 
     p {
         font-size: 1em;
+    }
+
+    #password {
+        font-size: 1.7em;
     }
 }
